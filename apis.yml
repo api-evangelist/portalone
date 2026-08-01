@@ -1,7 +1,26 @@
 aid: portalone
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/portalone.png
 name: PortalOne
-description: PortalOne is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  PortalOne is a hybrid gaming platform that blends mobile games with live,
+  interactive television-style entertainment, letting players compete inside
+  shows and classic titles such as Atari's Breakout. Operated by PortalOne AS
+  (Norway) and PortalOne, Inc. (United States), the company delivers its
+  experience through native iOS and Android apps rather than a public developer
+  platform. It is a consumer-facing entertainment product backed by Seedcamp and
+  other venture investors; as of this profile PortalOne publishes no public API,
+  SDK, developer portal, or API documentation.
 url: https://raw.githubusercontent.com/api-evangelist/portalone/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Gaming
+- Entertainment
+- Mobile
+- Hybrid Gaming
+- Consumer
+- Media
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/portalone-domain-security.yml
 - type: Website
-  url: http://portalone.com
+  url: https://portalone.com
+- type: Support
+  url: https://portalone.com/faqs/
+- type: Blog
+  url: https://portalone.com/news/
+- type: PrivacyPolicy
+  url: https://portalone.com/pages/privacy-policy/
+- type: TermsOfService
+  url: https://portalone.com/user-agreement/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
